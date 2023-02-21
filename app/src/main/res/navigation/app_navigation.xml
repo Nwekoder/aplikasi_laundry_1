@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/halamanUtamaFragment">
+
+    <fragment
+        android:id="@+id/halamanUtamaFragment"
+        android:name="com.musdalifah.aplikasilaundry.HalamanUtamaFragment"
+        android:label="fragment_halaman_utama"
+        tools:layout="@layout/fragment_halaman_utama" >
+        <action
+            android:id="@+id/action_halamanUtamaFragment_to_buatPesananFragment"
+            app:destination="@id/buatPesananFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_halamanUtamaFragment_to_riwayatPesananFragment"
+            app:destination="@id/riwayatPesananFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/buatPesananFragment"
+        android:name="com.musdalifah.aplikasilaundry.BuatPesananFragment"
+        android:label="fragment_buat_pesanan"
+        tools:layout="@layout/fragment_buat_pesanan" >
+        <action
+            android:id="@+id/action_buatPesananFragment_to_halamanUtamaFragment"
+            app:destination="@id/halamanUtamaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/riwayatPesananFragment"
+        android:name="com.musdalifah.aplikasilaundry.RiwayatPesananFragment"
+        android:label="fragment_riwayat_pesanan"
+        tools:layout="@layout/fragment_riwayat_pesanan" >
+        <action
+            android:id="@+id/action_riwayatPesananFragment_to_halamanUtamaFragment"
+            app:destination="@id/halamanUtamaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+</navigation>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Aplikasi Laundry</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello There, please remove me :)</string>
+    <string name="greeting">Selamat Datang</string>
+</resources>
